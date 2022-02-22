@@ -24,7 +24,7 @@ class PizzaDetailActivity : AppCompatActivity() {
 
         val star_ratings =intent.getStringExtra("star_ratings")
         txtStar_ratings.text =star_ratings
-//        rtbStar_ratings.rating =star_ratings.toFloat()
+        rtbStar_ratings.rating = star_ratings!!.toFloat()
 
         
         //Glide 라이브러리 -인터넷 이미지 불러오기
